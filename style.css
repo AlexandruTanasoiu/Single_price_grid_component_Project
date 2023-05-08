@@ -1,23 +1,63 @@
-body {
-    font-family: 'Outfit', sans-serif;
-    margin: 0%;
-    padding: 0%;
-    /* font-family: 'Karla', sans-serif; */
-}
-
-
 * {
     box-sizing: border-box;
 }
 
-.main {
-    width: 100%;
-    height: 1040px;
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    margin: 0 auto;
+    max-width: 1440px;
+
+    /* font-family: 'Karla', sans-serif; */
+}
+
+main {
     display: flex;
     flex-direction: column;
-    margin-right: 0px;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+}
+
+button {
+    background-color: rgb(192, 223, 52);
+    width: 75%;
+    height: 18%;
+    border-radius: 10px;
+    color: white;
+    font-size: 2.6rem;
+    font-weight: 700;
+    border: none;
+    margin: 0 auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    margin: 0 auto;
+}
+
+@media(max-width:680px) {
+    html {
+        font-size: 12px;
+    }
+
+    .bot_section {
+        flex-direction: column;
+    }
+
+    /* 
+    .left_bot .right_bot {
+       flex: 100%;     
+    } */
+
 }
 
 .top_section {
@@ -25,143 +65,122 @@ body {
     flex-direction: column;
     height: 40%;
     width: 100%;
+    padding-bottom: rem;
 }
 
 .top_title {
     position: relative;
     color: rgba(42, 178, 175, 1);
-    font-size: 65px;
+    font-size: 2.8rem;
     font-weight: 400;
-    left: 80px;
-    width: 1000px;
-    margin-bottom: 0%;
-    margin-top: 70px;
+    left: 2.5%;
+    width: 95%;
+    margin-bottom: 0px;
+    margin-top: 60px;
 }
 
 .top_subtitle {
     position: relative;
-    width: 1000px;
+    width: 95%;
     color: rgb(192, 223, 52);
-    font-size: 34px;
+    font-size: 2rem;
     font-weight: 700;
-    left: 80px;
+    left: 2.5%;
+    margin-top: 3px;
     margin-bottom: 0%;
-
 }
 
 .top_section p {
     position: relative;
     color: rgb(152, 166, 189);
-    font-size: 30px;
-    margin-top: 20px;
-    width: 1000px;
-    left: 80px;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    width: 80%;
+    left: 2.5%;
     line-height: 1.4;
 }
 
-
 .bot_section {
     display: flex;
-    flex-direction: row;
+    /* flex-wrap: wrap; */
     width: 100%;
     height: 60%;
-    justify-content: center;
+    margin: 0 auto;
 }
 
 .left_bot {
     display: flex;
     background-color: rgba(42, 178, 175, 1);
-    width: 50%;
     flex-direction: column;
+    flex: 50%;
 }
 
 .left_bot_title {
     position: relative;
     color: white;
-    left: 100px;
-    width: 500px;
-    font-size: 40px;
+    left: 15%;
+    width: 60%;
+    font-size: 3rem;
     font-weight: 400;
-    margin-bottom: 0%;
+    margin-bottom: 0px;
 }
 
 .left_bot p {
     position: relative;
     color: white;
-    font-size: 22px;
-    width: 500px;
+    font-size: 1.8rem;
+    width: 80%;
     font-weight: 200;
-    left: 100px;
-    margin-top: 15px;
-
+    left: 15%;
+    margin-top: 0.6rem;
+    margin-bottom: 2rem;
 }
 
 .price {
     position: relative;
-    font-size: 60px;
+    font-size: 3.5rem;
     font-weight: 700;
 }
 
 .period {
     position: relative;
     color: rgb(122, 133, 152);
-    font-size: 25px;
+    font-size: 1.8rem;
     font-weight: 400;
-    left: 50px;
-}
-
-button {
-    position: relative;
-    background-color: rgb(192, 223, 52);
-    width: 845px;
-    height: 100px;
-    left: 100px;
-    margin-top: 80px;
-    border-radius: 10px;
-    color: white;
-    font-size: 35px;
-    font-weight: 700;
-    border: none;
+    left: 4%;
 }
 
 .right_bot {
     display: flex;
     flex-direction: column;
     background-color: rgba(42, 178, 175, 0.8);
-    width: 50%;
+    flex: 50%;
 }
 
 .right_bot_title {
     color: white;
     position: relative;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 400;
-    width: 500px;
-    left: 80px;
+    margin-bottom: 0px;
+    width: 40%;
+    left: 15%;
 }
 
 .right_bot ul {
     position: relative;
     color: rgb(122, 133, 152);
-    width: 500px;
+    width: 80%;
     text-align: left;
-    font-size: 25px;
+    font-size: 1.8rem;
     font-weight: 400;
-    left: 40px;
+    left: 10%;
     list-style-type: none;
     line-height: 1.6;
 }
 
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: absolute;
-    bottom: 10px;    
-}
-
 .attribution {
-    font-size: 11px;
+    font-size: 0.6rem;
     bottom: 0px;
 }
 
